@@ -1,5 +1,6 @@
 import { createHandler } from "slshx";
-import { add } from "./add";
+import verify from "./verify";
+import whitelist from "./whitelist";
 
 const handler = createHandler({
   // Replaced by esbuild when bundling, see scripts/build.js (do not edit)
@@ -8,7 +9,7 @@ const handler = createHandler({
   applicationSecret: SLSHX_APPLICATION_SECRET,
   testServerId: SLSHX_TEST_SERVER_ID,
   // Add your commands here
-  commands: { add },
+  commands: { verify, whitelist },
 });
 
 export default { fetch: handler };

@@ -1,10 +1,14 @@
-name = "slshx-starter"
+name = "cftweetbot"
 type = "javascript"
 
-account_id = "" # TODO: add your Cloudflare account ID here
+account_id = "864cdf76f8254fb5539425299984d766" # TODO: add your Cloudflare account ID here
 workers_dev = true
 # route = ""
 # zone_id = ""
+
+kv_namespaces = [
+  {binding="KV", id = "7a28f8b1f71c4e6b9891ae369a28b551", preview_id = "7a28f8b1f71c4e6b9891ae369a28b551"}
+]
 
 compatibility_date = "2021-12-27"
 compatibility_flags = []

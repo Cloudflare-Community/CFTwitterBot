@@ -9,6 +9,7 @@
     "deploy:global": "node --no-warnings --experimental-vm-modules scripts/deploy.js"
   },
   "dependencies": {
+    "discord-api-types": "^0.27.2",
     "slshx": "^0.3.0"
   },
   "devDependencies": {
