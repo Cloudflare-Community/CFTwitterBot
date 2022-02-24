@@ -19,7 +19,7 @@ export default async function generateMessage(tweetLink: string){
         text: "From Twitter",
         icon_url: "https://abs.twimg.com/responsive-web/client-web/icon-ios.b1fc7275.png"
       },
-      timestamp: new Date().toISOString()
+      timestamp: new Date(Number((BigInt(tweetLink.split("/")[5]) >> 22n) + 1288834974657n)).toISOString()
     }]
   };
   if(tweet.image !== extractor.pfp) ret.embeds[0].image = {

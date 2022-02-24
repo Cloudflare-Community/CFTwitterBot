@@ -6,7 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "miniflare --watch --debug --wrangler-env=development",
-    "deploy:global": "node --no-warnings --experimental-vm-modules scripts/deploy.js"
+    "deploy:global": "node --no-warnings --experimental-vm-modules scripts/deploy.js",
+    "login:wrangler": "wrangler login",
+    "publish:worker": "wrangler publish"
   },
   "dependencies": {
     "discord-api-types": "^0.27.2",
@@ -15,6 +17,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^3.3.0",
     "esbuild": "^0.14.8",
-    "miniflare": "^2.3.0"
+    "miniflare": "^2.3.0",
+    "wrangler": "^0.0.17"
   }
 }

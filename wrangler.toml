@@ -17,6 +17,7 @@ compatibility_flags = []
 command = "node scripts/build.js production"
 [build.upload]
 format = "modules"
+dir = "./dist"
 main = "./index.mjs"
 
 [env.development.build]
